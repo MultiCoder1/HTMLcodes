@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+document.onmousemove = function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  var coor = "Coordinates: (" + x + "," + y + ")";
+  document.getElementById("demo").innerHTML = coor;
+}
+</script>
+
+<p>Move the mouse around in the box below:</p>
+
+<div style="width:300px;height:300px;border:1px solid #000000;" onmousemove="getCoords(event)">
+</div>
+
+<p>When you move your mouse around, the coordinates of your mouse will display here:</p>
+<p id="demo"></p>
+
+</body>
+</html>
